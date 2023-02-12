@@ -49,24 +49,6 @@
 
 
  /* Banner */
-  #banneri {
-    background-color: #e1b1ed;
-    width: 100%;
-    color: black;
-    text-align: center;
-    margin-top: 85px;
-    /* padding-left: 50px;
-    padding-right: 50px; */
-    padding-top: 40px;
-  }
-  
-  #banneri h1 {
-    font-size: 72px;
-    margin: 0;
-  }
-
-
-
   .banner {
     margin-top: 85px;
     padding-top: 30px;
@@ -78,12 +60,11 @@
   }
   
   .banner-text {
-    font-family: Montserrat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
     align-self: center;
     margin-left: 20px;
     font-size: 50px;
-    font-weight: 900;
-    
   }
 
   .banner-text-2{
