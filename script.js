@@ -1,18 +1,5 @@
 
-// Sticky Nav JS
-// window.onscroll = function() {stickNav()};
-
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function stickNav() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
-
+// Sticky Nav
 const nav = document.querySelector('.nav')
 window.addEventListener('scroll',fixNav)
 
@@ -23,4 +10,9 @@ function fixNav(){
     nav.classList.remove('active')
   }
 }
+
+// Carousel
+
+
+
 
