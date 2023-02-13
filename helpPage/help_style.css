@@ -1,4 +1,4 @@
-/* taken / adapted from "50 Projects in 50 Days" "FAQ-collapse" and "Scroll Animation" */
+/* taken / adapted from "50 Projects in 50 Days" "FAQ-collapse", "Scroll Animation", and "Ripple Button" */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
@@ -79,7 +79,7 @@ h1 {
 }
 
 .faq-toggle {
-    background-color: transparent;
+    background-color: green;
     border: 0;
     border-radius: 50%;
     cursor: pointer;
@@ -93,6 +93,7 @@ h1 {
     right: 30px;
     height: 30px;
     width: 30px;
+    overflow: hidden;
 }
 
 .faq-toggle:focus {
@@ -113,26 +114,59 @@ h1 {
 }
 
 .faq.active .faq-toggle {
-    background-color: #9fa4a8;
+    background-color: red;
 }
 
-.box {
-    background-color: transparent;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .faq:nth-of-type(even) {
+
+.faq:nth-of-type(even) {
     transform: translateX(-400%);
+}
+  
+.faq.show {
+    transform: translateX(0);
+}
+
+button .circle {
+    position: absolute;
+    background-color: purple;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
   }
   
-  .faq.show {
-    transform: translateX(0);
+@keyframes scale {
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
   }
+
+.contact-info {
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    padding-right: 1em;
+    padding-left: 0.5em;
+}
+
+.contact-info > ul > li {
+    padding-left: 5px;
+}
+
+.contact-info > ul > li:nth-of-type(1) {
+    list-style-type: "📱";
+}
+
+.contact-info > ul > li:nth-of-type(2) {
+    list-style-type: "✉";
+}
+
+.contact-info > ul > li:nth-of-type(3) {
+    list-style-type: "🗨";
+}
+
+ul ul {
+    list-style-type: none;
+    padding-left: 0.5em;
+}
