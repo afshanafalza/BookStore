@@ -5,6 +5,56 @@
 }
 
 /* Navbar */
+  /* .navbar {
+    padding: 20px 0;
+    padding-left: 20px;
+    font-family: 'Krona One',sans-serif;
+    background-color: white;
+    top: 0;
+    color: black;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .left a {
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  .center ul {
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+  }
+
+  .center li {
+    display: inline-block;  }
+
+  .center a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .center a:hover{
+    color: #6e42ff;
+  }
+
+  .navbar.active {
+
+    padding: 10px 0;
+
+  } */
+
+
+/* taken / adapted from "50 Projects in 50 Days" "Sticky Nav Bar" */
   .nav{
     position: fixed;
     font-family: 'Krona One',sans-serif;
@@ -253,3 +303,4 @@
   color:#aaa;
   margin-bottom:0;
 }
+  
