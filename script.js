@@ -1,16 +1,26 @@
 
 // Sticky Nav JS
-window.onscroll = function() {stickNav()};
+// window.onscroll = function() {stickNav()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
 
-function stickNav() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+// function stickNav() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+const nav = document.querySelector('.nav')
+window.addEventListener('scroll',fixNav)
+
+function fixNav(){
+  if(window.scrollY > nav.offsetHeight + 150){
+    nav.classList.add('active')
   } else {
-    navbar.classList.remove("sticky");
+    nav.classList.remove('active')
   }
 }
-
 
