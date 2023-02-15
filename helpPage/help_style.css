@@ -37,7 +37,7 @@ h1 {
     overflow: hidden;
     transition: 0.3s ease;
     transform: translateX(400%);
-    transition: transform 0.4s ease;
+    transition: transform 1.0s ease;
     display:grid;
     grid-template-rows: 2fr;
 }
