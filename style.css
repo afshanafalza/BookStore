@@ -1,3 +1,10 @@
+/* --english-violet: #45425aff;
+--ebony: #575c55ff;
+--reseda-green: #6c7d47ff;
+--moss-green: #96a13aff;
+--apple-green: #acc12fff; */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +16,7 @@
   .nav{
     position: fixed;
     font-family: 'Krona One',sans-serif;
-    background-color: white;
+    background-color: #575C55;
     top: 0;
     left: 0;
     right: 0;
@@ -32,7 +39,7 @@
   }
 
   .nav a{
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 7px 15px;
     transition: all 0.3s ease-in-out;
@@ -47,12 +54,16 @@
     color: black;
   }
 
+  .nav.active.current{
+    color: black;
+  }
+
   .nav.active .container{
     padding: 10px 0;
   }
 
   .nav a:hover {
-    color: blueviolet;
+    color: #ACC12F;
   }
 
   .nav a.current {
@@ -72,7 +83,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     height: auto;
-    background-color:  #e1b1ed;
+    background-color:  #6C7D47;
   }
   
   .banner-text {
@@ -217,8 +228,8 @@
 /* Footer */
 .footer-basic {
   padding:40px 0;
-  background-color:#ffffff;
-  color:#4b4c4d;
+  background-color:#575C55;
+  color:white;
 }
 
 .footer-basic ul {
