@@ -46,7 +46,7 @@ catbutton.addEventListener('click', () => {
     clickCount++;    
 });
 
-// Search
+// Search - taken / adapted from "50 Projects in 50 days" "Hidden Search Bar"
 const search = document.querySelector(`.search`);
 const btn = document.querySelector(`.btn`);
 const input = document.querySelector(`.input`);
