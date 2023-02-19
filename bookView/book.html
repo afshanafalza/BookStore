@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookStore Book Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mada&display=swap" rel="stylesheet">
+  <link href="book_style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="nav">
+        <div class="container">
+            <a href="#home" class="current">BookStore</a>
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="filter"> 
+        <div id="cat-container">
+            <span class="material-icons dark-grey">sort</span>
+            <p class="cat-font"> Categories </p> 
+        </div>
+        <!-- <div id="search-container">
+            <span class="material-icons dark-grey">search</span>
+        </div> -->
+        <div class="search">
+            <input type="text" class="input" placeholder="Search...">
+            <button class="btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div class="categories hidden">
+        <div class="cat-box">
+            <form>
+                <input type="checkbox" id="cat1" name="cat1" value="Adventure">
+                <label for="cat1">Adventure</label>
+                <input type="checkbox" id="cat2" name="cat2" value="Comedy">
+                <label for="cat2">Comedy</label>
+                <input type="checkbox" id="cat3" name="cat3" value="Crime">
+                <label for="cat3">Crime</label>
+                <input type="checkbox" id="cat4" name="cat4" value="Drama">
+                <label for="cat4">Drama</label> <br>
+                <input type="checkbox" id="cat5" name="cat5" value="Fantasy">
+                <label for="cat5">Fantasy</label>
+                <input type="checkbox" id="cat6" name="cat6" value="Horror">
+                <label for="cat6">Horror</label>
+                <input type="checkbox" id="cat7" name="cat7" value="Mystery">
+                <label for="cat7">Mystery</label>
+                <input type="checkbox" id="cat8" name="cat8" value="Romance">
+                <label for="cat8">Romance</label>
+                <input type="checkbox" id="cat9" name="cat9" value="Thriller">
+                <label for="cat9">Thriller</label>
+
+              </form>              
+        </div>
+    </div>
+    <div id="book-display">
+        <div id="book-row">
+            <div class="book-info" id="book-info-1">
+                <div class="book-area">
+                    <img class="book-cover" src="\bookView\bookcovers\bookcover1.jpg">
+                </div>
+                <div class="book-under">
+                    <div class="book-details">
+                        <div class="book-title">
+                            And There He Kept Her
+                        </div>
+                        <div class="book-author">
+                            by <b>Joshua Moehling</b>
+                        </div>
+                        <div class="book-price">
+                            $17.99
+                        </div>
+                    </div>
+                    <div class="rating-area">
+                        <div class="stars">
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>   
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>         
+                        </div>
+                        <div class="book-rating">(348)</div>    
+                    </div>
+                    <div class="book-leave-rating" id="book-rating-1">Leave a Rating</div>    
+                    <div class="rating-box hidden" id="rating-box-1">
+                        <form>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input id="submit1" type="submit" value="Submit">
+                            <input id="close1" type="submit" value="Close">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="book-info">
+                <div class="book-area">
+                    <img class="book-cover" src="\bookView\bookcovers\bookcover2.png">
+                </div>
+                <div class="book-under">
+                    <div class="book-details">
+                        <div class="book-title">
+                            Missing Dead Girls
+                        </div>
+                        <div class="book-author">
+                            by <b>Sara Walters</b>
+                        </div>
+                        <div class="book-price">
+                            $11.99
+                        </div>
+                    </div>
+                    <div class="rating-area">
+                        <div class="stars">
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>   
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 light-grey review-button">star</span>         
+                        </div>
+                        <div class="book-rating">(203)</div>    
+                    </div>
+                    <div class="book-leave-rating" id="book-rating-2">Leave a Rating</div>    
+                    <div class="rating-box hidden" id="rating-box-2">
+                        <form>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input id="submit2" type="submit" value="Submit">
+                            <input id="close2" type="submit" value="Close">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="book-info">
+                <div class="book-area">
+                    <img class="book-cover" src="\bookView\bookcovers\bookcover3.png">
+                </div>
+                <div class="book-under">
+                    <div class="book-details">
+                        <div class="book-title">
+                            The Sweet Spot
+                        </div>
+                        <div class="book-author">
+                            by <b>Amy Poeppel</b>
+                        </div>
+                        <div class="book-price">
+                            $16.19
+                        </div>
+                    </div>
+                    <div class="rating-area">
+                        <div class="stars">
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>   
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>         
+                        </div>
+                        <div class="book-rating">(421)</div>    
+                    </div>
+                    <div class="book-leave-rating" id="book-rating-3">Leave a Rating</div>    
+                    <div class="rating-box hidden" id="rating-box-3">
+                        <form>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input id="submit3" type="submit" value="Submit">
+                            <input id="close3" type="submit" value="Close">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="book-info">
+                <div class="book-area">
+                    <img class="book-cover" src="\bookView\bookcovers\bookcover4.png">
+                </div>
+                <div class="book-under">
+                    <div class="book-details">
+                        <div class="book-title">
+                            The Perfect Marriage
+                        </div>
+                        <div class="book-author">
+                            by <b>Jeneva Rose</b>
+                        </div>
+                        <div class="book-price">
+                            $13.99
+                        </div>
+                    </div>
+                    <div class="rating-area">
+                        <div class="stars">
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>   
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 light-grey review-button">star</span>    
+                            <span class="material-icons md-18 light-grey review-button">star</span>         
+                        </div>
+                        <div class="book-rating">(198)</div>    
+                    </div>
+                    <div class="book-leave-rating" id="book-rating-4">Leave a Rating</div>    
+                    <div class="rating-box hidden" id="rating-box-4">
+                        <form>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input id="submit4" type="submit" value="Submit">
+                            <input id="close4" type="submit" value="Close">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="book-info">
+                <div class="book-area">
+                    <img class="book-cover" src="\bookView\bookcovers\bookcover5.png">
+                </div>
+                <div class="book-under">
+                    <div class="book-details">
+                        <div class="book-title">
+                            Love and Other Words
+                        </div>
+                        <div class="book-author">
+                            by <b>Christina Lauren</b>
+                        </div>
+                        <div class="book-price">
+                            $13.99
+                        </div>
+                    </div>
+                    <div class="rating-area">
+                        <div class="stars">
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 gold review-button">star</span>   
+                            <span class="material-icons md-18 gold review-button">star</span>    
+                            <span class="material-icons md-18 light-grey review-button">star</span>    
+                            <span class="material-icons md-18 light-grey review-button">star</span>         
+                        </div>
+                        <div class="book-rating">(133)</div>    
+                    </div>
+                    <div class="book-leave-rating" id="book-rating-5">Leave a Rating</div>    
+                    <div class="rating-box hidden" id="rating-box-5">
+                        <form>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css"><span class="material-icons md-18 gold review-button">star</span><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html"><span class="material-icons md-18 gold review-button">star</span></label><br>
+                            <input id="submit5" type="submit" value="Submit">
+                            <input id="close5" type="submit" value="Close">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="book_script.js"></script>
+</body>
+</html>
