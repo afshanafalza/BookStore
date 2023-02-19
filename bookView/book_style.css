@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
 /* taken / adapted from "50 Projects in 50 Days" "Sticky Nav Bar" */
 .nav{
     position: fixed;
@@ -195,6 +202,7 @@
     line-height: 29px;
 }
 
+/* taken / adapted from "50 Projects in 50 days" "Hidden Search Bar */
 .search {
     position: relative;
     height: 50px;
@@ -205,9 +213,12 @@
     border: 0;
     font-size: 18px;
     padding: 15px;
-    height: 50px;
-    width: 50px;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    right: 0px;
     transition: width 0.3s ease;
+    border: solid black;
 }
 
 .btn {
@@ -221,6 +232,7 @@
     height: 50px;
     width: 50px;
     transition: transform 0.3s ease;
+    border: solid grey;
 }
 
 .btn:focus, 
@@ -253,3 +265,44 @@
 .material-icons.md-18 { font-size: 18px }
 
 .material-icons.gold { color:rgba(214, 178, 32, 0.711)}
+
+/* Footer */
+.footer-basic {
+  padding:40px 0;
+  background-color:#575C55;
+  color:white;
+}
+
+.footer-basic ul {
+  display: flex;
+  justify-content: center;
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
