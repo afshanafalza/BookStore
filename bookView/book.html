@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mada&display=swap" rel="stylesheet">
+  <link href="../universalStyles/nav_style.css" rel="stylesheet">
+  <link href="../universalStyles/footer_style.css" rel="stylesheet">
   <link href="book_style.css" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +21,7 @@
             <a href="../index.html" class="current">BookStore</a>
             <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../bookView/book.html">Books</a></li>
+            <li><a href="book.html">Books</a></li>
             <li><a href="../helpPage/help.html">Help</a></li>
             <li><a href="../shoppingCart/shoppingCart.html"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
@@ -30,9 +32,6 @@
             <span class="material-icons dark-grey">sort</span>
             <p class="cat-font"> Categories </p> 
         </div>
-        <!-- <div id="search-container">
-            <span class="material-icons dark-grey">search</span>
-        </div> -->
         <!-- taken / adapted from "50 Projects in 50 days" "Hidden Search Bar" -->
         <div class="search">
             <form>
@@ -99,6 +98,7 @@
                         </div>
                         <div class="book-rating">(348)</div>    
                     </div>
+                    <!-- leave a rating -->
                     <div class="book-leave-rating" id="book-rating-1">Leave a Rating</div>    
                     <div class="rating-box hidden" id="rating-box-1">
                         <form>
@@ -145,6 +145,7 @@
                         </div>
                         <div class="book-rating">(203)</div>    
                     </div>
+                    <!-- leave a rating -->
                     <div class="book-leave-rating" id="book-rating-2">Leave a Rating</div>    
                     <div class="rating-box hidden" id="rating-box-2">
                         <form>
@@ -191,6 +192,7 @@
                         </div>
                         <div class="book-rating">(421)</div>    
                     </div>
+                    <!-- leave a rating -->
                     <div class="book-leave-rating" id="book-rating-3">Leave a Rating</div>    
                     <div class="rating-box hidden" id="rating-box-3">
                         <form>
@@ -237,6 +239,7 @@
                         </div>
                         <div class="book-rating">(198)</div>    
                     </div>
+                    <!-- leave a rating -->
                     <div class="book-leave-rating" id="book-rating-4">Leave a Rating</div>    
                     <div class="rating-box hidden" id="rating-box-4">
                         <form>
@@ -283,6 +286,7 @@
                         </div>
                         <div class="book-rating">(133)</div>    
                     </div>
+                    <!-- leave a rating -->
                     <div class="book-leave-rating" id="book-rating-5">Leave a Rating</div>    
                     <div class="rating-box hidden" id="rating-box-5">
                         <form>
@@ -306,15 +310,16 @@
     </div>
     <!-- Footer -->
     <div class="footer-basic">
-      <footer>
-          <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Afshana</a></li>
-              <li class="list-inline-item"><a href="#">Mushi</a></li>
-              <li class="list-inline-item"><a href="#">Timothy</a></li>
-              <li class="list-inline-item"><a href="#">Tanjinul</a></li>
-          </ul>
-          <p class="copyright">Bookstore © 2023</p>
-      </footer>
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://github.com/afshanafalza" target="_blank">Afshana Falza</a></li>
+                <li class="list-inline-item"><a href="https://github.com/mushi20" target="_blank">Maroosha Ishtiaq</a></li>
+                <li class="list-inline-item"><a href="https://github.com/TimosDakis" target="_blank">Timothy Dakis</a></li>
+                <li class="list-inline-item"><a href="https://github.com/Tanjinul" target="_blank">Tanjinul Hoque</a></li>
+            </ul>
+            <p class="copyright">BookStore &copy; 2023</p>
+        </footer>
+    </div>
     <script src="book_script.js"></script>
 </body>
 </html>
