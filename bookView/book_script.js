@@ -1,5 +1,4 @@
-
-// Sticky Nav
+// Sticky Nav - taken from "50 Projects in 50 Days" "Sticky Nav Bar"
 const nav = document.querySelector('.nav')
 window.addEventListener('scroll',fixNav)
 
@@ -21,11 +20,6 @@ for(let i=1; i<=5; i++) {
     rate.addEventListener('click', () => {
         ratebox.classList.remove("hidden");
     });
-    
-    // submit1.addEventListener('click', () => {
-    //     console.log("clicked");
-    //     // ratebox.classList.remove("hidden");
-    // });
 }
 
 // Categories Button
