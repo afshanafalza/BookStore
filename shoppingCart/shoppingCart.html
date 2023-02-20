@@ -6,13 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shopping Cart</title>
+        <link href="../universalStyles/nav_style.css" rel="stylesheet">
+        <link href="../universalStyles/footer_style.css" rel="stylesheet">
         <link rel="stylesheet" href="shoppingCart.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 
 <body>
-    
     <nav class="nav">
         <div class="container">
           <a href="../index.html" class="current">BookStore</a>
@@ -20,20 +21,22 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../bookView/book.html">Books</a></li>
             <li><a href="../helpPage/help.html">Help</a></li>
-            <li><a href="../shoppingCart/shoppingCart.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="shoppingCart.html"><i class="fas fa-shopping-cart"></i></a></li>
           </ul>
         </div>
     </nav>
 
+    <!-- cart-->
     <div class=”Cart-Container”>
         <table>
+            <!-- cart items -->
             <tr>
                 <th>Items</th>
                 <th>Quantity</th>
                 <th>Price</th>
             </tr>
             <tr>
-                <td><img src="Irene Gallo on Twitter.png"/></td>
+                <td><img src="../Book Images/Irene Gallo on Twitter.png"/></td>
                 <td>01</td>
                 <td>$20</td>
             </tr>
@@ -42,43 +45,55 @@
                 <td>01</td>
                 <td>$30</td>
             </tr>
+            <tr>
+                <td><img src="../Book Images/Agatha Christie 2.jpg"/></td>
+                <td>01</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td><img src="../Book Images/Agatha Christie 6.jpg"/></td>
+                <td>01</td>
+                <td>$30</td>
+            </tr>
+            <!-- adapted from https://stackoverflow.com/questions/17169094/how-to-add-horizontal-line-in-a-table -->
+            <tr class="table-division-line">
+                <th colspan="3"></th>
+            </tr>
+            <!-- total cost -->
+            <tr>
+                <td class="total">Total</td>
+                <td class="total"></td>
+                <td class="total">$105</td>
+            </tr>
+            <tr>
+                <td class="total">Shipping Estimate</td>
+                <td class="total"></td>
+                <td class="total">Calculated at Checkout</td>
+            </tr>
+            <tr>
+                <th class="total">Order Total</th>
+                <td class="total"></td>
+                <td class="total"><strong>$50</strong></td>
+            </tr>
         </table>
-
-        <hr>
-
-        <div class=”Cart-Info”>
-            <div class="column1">
-                <p>Total</p>
-                <p>Shipping Estimate</p>
-                <p><strong>Order Total</strong></p>
-            </div>
-            <div class="column2">
-                <p>$50</p>
-                <p>Calculated at Checkout</p>
-                <p><strong>$50</strong></p>
-            </div>
-        </div>
-
-
     </div>
-    <div class=”checkout-container”>
+    
+    <div class="cart-container">
         <button class=”button”>Checkout</button>
     </div>
 
     <!-- Footer -->
-
     <div class="footer-basic">
         <footer>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Afshana</a></li>
-                <li class="list-inline-item"><a href="#">Maroosha</a></li>
-                <li class="list-inline-item"><a href="#">Timothy</a></li>
-                <li class="list-inline-item"><a href="#">Tanjinul</a></li>
+                <li class="list-inline-item"><a href="https://github.com/afshanafalza" target="_blank">Afshana Falza</a></li>
+                <li class="list-inline-item"><a href="https://github.com/mushi20" target="_blank">Maroosha Ishtiaq</a></li>
+                <li class="list-inline-item"><a href="https://github.com/TimosDakis" target="_blank">Timothy Dakis</a></li>
+                <li class="list-inline-item"><a href="https://github.com/Tanjinul" target="_blank">Tanjinul Hoque</a></li>
             </ul>
             <p class="copyright">BookStore &copy; 2023</p>
         </footer>
     </div>
-
-
+    <script src="shoppingCart.js"></script>
 </body>
 </html>
