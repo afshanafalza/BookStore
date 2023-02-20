@@ -1,5 +1,4 @@
-/* taken / adapted from "50 Projects in 50 Days" "FAQ-collapse", "Scroll Animation", and "Ripple Button" */
-
+// taken / adapted from "50 Projects in 50 Days" "FAQ-collapse"
 const toggles = document.querySelectorAll('.faq-toggle')
 
 toggles.forEach(toggle => {
@@ -8,6 +7,7 @@ toggles.forEach(toggle => {
     })
 })
 
+// taken / adapted from "50 Projects in 50 Days" "Scroll Animation"
 const boxes = document.querySelectorAll('.faq')
 
 window.addEventListener('scroll', checkBoxes)
@@ -28,6 +28,7 @@ function checkBoxes() {
     })
 }
 
+// taken / adapted from "50 Projects in 50 Days" and "Ripple Button"
 const buttons = document.querySelectorAll('.ripple')
 
 buttons.forEach(button => {
