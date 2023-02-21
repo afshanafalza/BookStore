@@ -14,8 +14,6 @@ function fixNav(){
 for(let i=1; i<=5; i++) {
     let rate = document.querySelector(`#book-rating-${i}`);
     let ratebox = document.querySelector(`#rating-box-${i}`);
-    let submit = document.querySelector(`#submit${i}`);
-    let close = document.querySelector(`#close${i}`);
 
     rate.addEventListener('click', () => {
         ratebox.classList.remove("hidden");
