@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 /* footer and nav styling are in a separate css file */
-
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +13,8 @@ body {
 
 /* Banner */
 .banner {
-  margin-top: 70px;
-  padding-top: 20px;
-
+  margin-top: 80px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,9 +22,8 @@ body {
 }
 
 .banner-text {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Petit Formal Script', cursive;
   font-weight: 650;
-  font-style: italic;
   align-self: center;
   margin-left: 20px;
   font-size: 90px;
