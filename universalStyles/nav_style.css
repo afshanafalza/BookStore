@@ -3,7 +3,7 @@
 :root{
     --box-color: rgb(134, 187, 162);
     --text-color: black;
-    --hover-color: blueviolet;
+    --hover-color: white;
 }
 
 .nav{
