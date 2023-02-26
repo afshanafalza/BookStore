@@ -12,5 +12,5 @@
 - [Sticky Navbar](https://github.com/afshanafalza/BookStore/blob/main/script.js#L1)
 - [Collapsable FAQ](https://github.com/afshanafalza/BookStore/blob/main/helpPage/help_script.js#L1)
 - [Hidden Search](https://github.com/afshanafalza/BookStore/blob/main/bookView/book_script.js#L41)
-- [Scroll Animation](https://github.com/afshanafalza/BookStore/blob/main/helpPage/help_script.js#L10)
-*Note: hyperlinks link to an example of where udemy idea was implemented*
+- [Scroll Animation](https://github.com/afshanafalza/BookStore/blob/main/helpPage/help_script.js#L10)  
+- *Note: hyperlinks link to an example of where udemy idea was implemented*
